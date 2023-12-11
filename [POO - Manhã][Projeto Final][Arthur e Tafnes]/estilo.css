@@ -1,0 +1,139 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #dedede;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    max-width: 340px;
+    margin: auto;
+    margin-top: 300px;
+
+    padding: 20px;
+
+    background-color: #292929;
+    font-size: 16px;
+
+    /*border: 1px dashed #999999*/
+}
+
+.formulario-linha {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primario {
+    background-color: #ec0000;
+    color: #e3c6c6;
+    border-radius: 8px;
+
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* -------------------------------------- */
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 16px;
+
+    border: dashed 1px #0000ff;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    padding: 16px;
+    height: 120px;
+
+    /*border: dashed 1px #ff0000;*/
+}
+
+.card>.avatar {
+    width: 120px;
+    object-fit: cover;
+    border: dashed 1px #0000ff;
+    border-radius: 120px;
+}
+
+.card>.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: dashed 1px #0000ff;
+}
+
+.card>.conteudo>.titulo {
+    margin: 0;
+}
+
+.card>.conteudo>.descricao {
+    margin: 0;
+    margin-top: 4px;
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.card>.barra-botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100px;
+    /* border: dashed 1px #0000ff;*/
+}
+
+/* ---------------------------------------------------- */
+
+.car-expandido {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    max-width: 800px;
+}
+
+.car-expandido>.avatar {
+    max-height: 300px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.car-expandido>.conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    /*border: dashed 1px #ffffff;*/
+}
+
+.car-expandido>.conteudo>.titulo {
+    margin: 0;
+}
+
+.car-expandido>.barra-botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 16px;
+}
+
+.car-expandido>.barra-botoes>button {
+    width: 100%;
+}
